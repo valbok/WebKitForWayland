@@ -62,7 +62,7 @@ public:
     bool changePipelineState(GstState) override;
 
     void durationChanged() override;
-    MediaTime durationMediaTime() const override { return m_mediaTimeDuration; }
+    MediaTime durationMediaTime() const override;
     float duration() const override;
     float mediaTimeForTimeValue(float timeValue) const;
     void setRate(float) override;
